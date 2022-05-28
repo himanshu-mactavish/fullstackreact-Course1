@@ -70,7 +70,7 @@
     <header class="jumbotron">
       <div class="container">
         <div class="row row-header">
-          <div class="col-12 col-sm-6">
+          <div class="col-12 col-sm-6 my-auto">
             <h1>Ristorante con Fusion</h1>
             <p>
               We take inspiration from the World's best cuisines, and create a
@@ -78,7 +78,18 @@
               your culinary senses!
             </p>
           </div>
-          <div class="col-12 col-sm"></div>
+          <div class="col col-sm-6 my-auto">
+            <img class="img-fluid" src="img/logo.png" />
+            <div class="col col-sm-6 float-right">
+              <button
+                type="button"
+                class="btn btn-warning btn-block"
+                onclick="location.href='index.html#reserveTable'"
+              >
+                Reserve Table
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </header>
@@ -114,14 +125,25 @@
         <div class="col-12 col-sm-4 col-md-3">
           <h3>This Month's Promotions</h3>
         </div>
-        <div class="col col-sm col-md">
-          <h2>Weekend Grand Buffet</h2>
-          <p>
-            Featuring mouthwatering combinations with a choice of five different
-            salads, six enticing appetizers, six main entrees and five choicest
-            desserts. Free flowing bubbly and soft drinks. All for just $19.99
-            per person
-          </p>
+        <div class="col col-sm order-sm-last col-md">
+          <div class="media float-right">
+            <img
+              class="d-flex mr-3 img-thumbnail"
+              src="img/buffet.png"
+              alt="Grand Buffet"
+            />
+          </div>
+          <div class="media-body">
+            <h2 class="mt-0">
+              Weekend Grand Buffet<span class="badge badge-danger">NEW</span>
+            </h2>
+            <p class="d-none d-sm-block">
+              Featuring mouthwatering combinations with a choice of five
+              different salads, six enticing appetizers, six main entrees and
+              five choicest desserts. Free flowing bubbly and soft drinks. All
+              for just $19.99 per person
+            </p>
+          </div>
         </div>
       </div>
 
@@ -145,6 +167,112 @@
                 world, he specializes in creating mouthwatering Indo-Italian
                 fusion experiences.
               </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row row-content align-item-center">
+        <div class="col col-8 offset-2">
+          <div class="card" style="max-width: 100%">
+            <h3
+              class="card-header header2 text-left"
+              style="color: white"
+              id="reserveTable"
+            >
+              Reserve a Table
+            </h3>
+            <div class="cards-body text-left">
+              <div class="col col-sm">
+                <form>
+                  <div class="col col-sm" style="padding: 10px 15px">
+                    <label class="control-label">Number Of Guests</label>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        id="inlineradio1"
+                      />
+                      <label class="form-check-label" for="inlineradio1"
+                        >1</label
+                      >
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        id="inlineradio2"
+                      />
+                      <label class="form-check-label" for="inlineradio2"
+                        >2</label
+                      >
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        id="inlineradio3"
+                      />
+                      <label class="form-check-label" for="inlineradio3"
+                        >3</label
+                      >
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        id="inlineradio4"
+                      />
+                      <label class="form-check-label" for="inlineradio4"
+                        >4</label
+                      >
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        id="inlineradio5"
+                      />
+                      <label class="form-check-label" for="inlineradio5"
+                        >5</label
+                      >
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        id="inlineradio6"
+                      />
+                      <label class="form-check-label" for="inlineradio6"
+                        >6</label
+                      >
+                    </div>
+                  </div>
+                  <div class="col" style="padding: 10px 15px">
+                    <label class="control-label">Date and Time</label>
+                    <div class="form-check form-check-inline">
+                      <div class="col col-md">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Date"
+                        />
+                      </div>
+                      <div class="col col-md">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Time"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-sm offset-3" style="padding: 10px 15px">
+                    <button type="submit" class="btn btn-primary">
+                      Reserve
+                    </button>
+                  </div>
+                </form>
+              </div>
             </div>
           </div>
         </div>
